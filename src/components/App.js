@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './NavBar';
 import About from './About';
 import Todo from './Todo';
-import Contact from './Contacts';
+import Contact from './Contact';
 
 const App = () => {
   return (
