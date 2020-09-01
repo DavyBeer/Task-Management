@@ -1,0 +1,7 @@
+User Stories:
+
+As a user, I would like to be able to edit my to-do list items to fix any errors
+
+As a user, I would like to be able to see the whole to-do list, active items, or completed items
+
+As a user, I would like to create a log in to save my to-do list
