@@ -22,25 +22,25 @@ class Contact extends React.Component {
       <div>
         <h5>First Name:</h5>
         <input
-          value={this.state.value}
+          value={this.state.firstName}
           onChange={this.handleChange.bind(this)}
           style={style}
         />
         <h5>Last Name:</h5>
         <input
-            value={this.state.value}
+            value={this.state.lastName}
             onChange={this.handleChange.bind(this)}
             style={style}    
         />
         <h5>Email:</h5>
         <input
-            value={this.state.value}
+            value={this.state.email}
             onChange={this.handleChange.bind(this)}
             style={style}    
         />
         <h5>Comments:</h5>
         <input
-            value={this.state.value}
+            value={this.state.comments}
             onChange={this.handleChange.bind(this)}
             style={style}    
         />
