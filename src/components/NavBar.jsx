@@ -1,20 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import NavTab from "./NavTab.jsx";
 
-const NavTab = (props) => {
-  var activeStyle = {
-    color: "green",
-    fontWeight: "bold"
-  };
-
-  var NavStyle = {
-    margin: "10px"
-  };
+const NavBar = () => {
   return (
-    <NavLink style={NavStyle} activeStyle={activeStyle} to={props.to}>
-      {props.label}
-    </NavLink>
+    <div>
+      <NavTab to="/about" label="About" />
+      <NavTab to="/resume" label="Resume" />
+      <NavTab to="/projects" label="Projects" />
+      <NavTab to="/contact" label="Contact" />
+    </div>
   );
 };
 
-export default NavTab;
+export default NavBar;
