@@ -15,7 +15,7 @@ const allList = (state = [], action) => {
         case EDIT_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index)];
         default:
-            return;
+            return state;
     }
 };
 
