@@ -4,15 +4,15 @@ import {
     DEL_LIST_ITEM,
     EDIT_LIST_ITEM,
     MARK_LIST_ITEM
-} from "./constants/constants.js";
+} from "../constants/constants.js";
 
 const allList = (state = [], action) => {
     switch (action.type) {
-        case "ADD_LIST_ITEM":
+        case ADD_LIST_ITEM:
             return [...state,action.task];
-        case "DEL_LIST_ITEM":
+        case DEL_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index+1)];
-        case "EDIT_LIST_ITEM":
+        case EDIT_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index)];
         default:
             return;
@@ -21,13 +21,13 @@ const allList = (state = [], action) => {
 
 const activeList = (state = [], action) => {
     switch (action.type) {
-        case "ADD_LIST_ITEM":
+        case ADD_LIST_ITEM:
             return [...state,action.task];
-        case "DEL_LIST_ITEM":
+        case DEL_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index+1)];
-        case "EDIT_LIST_ITEM":
+        case EDIT_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index)];
-        case "MARK_LIST_ITEM":
+        case MARK_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index+1)];
         default:
             return state;
@@ -36,11 +36,11 @@ const activeList = (state = [], action) => {
 
 const markedList = (state = [], action) => {
     switch (action.type) {
-        case "MARK_LIST_ITEM":
+        case MARK_LIST_ITEM:
             return [...state,action.task];
-        case "DEL_LIST_ITEM":
+        case DEL_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index+1)];
-        case "EDIT_LIST_ITEM":
+        case EDIT_LIST_ITEM:
             return [...state.slice(0,action.index),...state.slice(action.index)];
         default:
             return state;
