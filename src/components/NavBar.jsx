@@ -1,6 +1,6 @@
 import React from "react";
-import Switch from "react-router-dom";
-import { NavTab, Route } from "./NavTab.jsx";
+import { Switch, Route } from "react-router-dom";
+import NavTab from "./NavTab.jsx";
 
 const NavBar = () => {
   return (
@@ -9,12 +9,6 @@ const NavBar = () => {
       <NavTab to="/todo" label="Todo" />
       <NavTab to="/contact" label="Contact" />
     </div>
-    <Switch>
-        <Route exact path="/" component={About} />
-        <Route path="/about" component={About} />
-        <Route path="/todo" component={Todo} />
-        <Route path="/contact" component={Contact} />
-    </Switch>
   );
 };
 
