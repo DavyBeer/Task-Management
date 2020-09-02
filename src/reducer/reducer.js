@@ -1,4 +1,4 @@
-impoort { combineReducers } from "redux";
+import { combineReducers } from "redux";
 import {
     ADD_LIST_ITEM,
     DEL_LIST_ITEM,
