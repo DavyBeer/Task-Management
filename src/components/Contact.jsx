@@ -45,7 +45,7 @@ class Contact extends React.Component {
             style={style}    
         />
         <div>
-          <button onClick={this.handleSubmit.bind(this)}>Send</button>
+          <button onClick={this.handleSubmit.bind(this)}>Submit</button>
         </div>
         <Prompt
           when={this.state.value !== ""}
