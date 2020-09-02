@@ -3,7 +3,7 @@ const DEL_LIST_ITEM = "DEL_LIST_ITEM";
 const EDIT_LIST_ITEM = "EDIT_LIST_ITEM";
 const MARK_LIST_ITEM = "MARK_LIST_ITEM";
 
-export {
+module.exports = {
     ADD_LIST_ITEM,
     DEL_LIST_ITEM,
     EDIT_LIST_ITEM,
