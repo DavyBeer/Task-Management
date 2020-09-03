@@ -29,13 +29,4 @@ const reducer = (state = [], action) => {
     }
 };
 
-const reducer2 = (stateM = [], action) => {
-    switch (action.type) {
-        case MARK_LIST_ITEM:
-            return [...stateM,action.item];
-        default:
-            return stateM;
-    }
-}
-
-export default { reducer, reducer2 };
+export default reducer;
