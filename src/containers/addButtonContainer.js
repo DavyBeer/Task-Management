@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import AddButton from "../components/TaskList.jsx";
+import TaskList from "../components/TaskList.jsx";
 import addListItem from "../actions/addListItem";
 import delListItem from "../actions/delListItem";
 
@@ -22,7 +22,7 @@ const mapStateToProps = state => {
   
 
 const AddButtonContainer = connect(mapStateToProps, mapDispatchToProps)(
-    AddButton
+    TaskList
   );
 
 export default AddButtonContainer;

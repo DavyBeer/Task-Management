@@ -36,7 +36,7 @@ class Input extends React.Component {
     }
 }
 
-const AddButton = props => {
+const TaskList = props => {
     return (
       <div>
         <Input onAdd={props.onAdd} />
@@ -53,4 +53,4 @@ const AddButton = props => {
     );
 };
 
-export default AddButton;
+export default TaskList;
