@@ -21,8 +21,8 @@ const mapStateToProps = state => {
   };
   
 
-const AddButtonContainer = connect(mapStateToProps, mapDispatchToProps)(
+const TaskListContainer = connect(mapStateToProps, mapDispatchToProps)(
     TaskList
   );
 
-export default AddButtonContainer;
+export default TaskListContainer;
