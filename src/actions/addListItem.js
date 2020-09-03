@@ -1,10 +1,12 @@
-import { ADD_LIST_ITEM } from "./constants/constants.js";
+import { ADD_LIST_ITEM } from "../constants/constants.js";
 
-const addListItem = (task) => {
+const addListItem = (name) => {
     return {
-        type: "ADD_LIST_ITEM",
-        item: task
+      type: ADD_LIST_ITEM,
+      item: {
+        name: name
+      }
     };
-};
+  };
 
 export default addListItem;
