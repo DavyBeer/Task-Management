@@ -4,9 +4,10 @@ const Item = props => {
     return (
       <div>
         <div>
-          Item : {props.name}
+          Item : {props.name} 
+          <button onClick={() => props.onDelete(props.index)}>Delete</button>
+          <button onClick={() => props.onMark(props.index)}>Completed</button>
         </div>
-        <button onClick={() => props.onDelete(props.index)}>Delete</button>
       </div>
     );
 };
@@ -44,6 +45,7 @@ const TaskList = props => {
           return (
             <Item
               onDelete={props.onDelete}
+              onMark={props.onMark}
               index={index}
               name={item.name}
             />
