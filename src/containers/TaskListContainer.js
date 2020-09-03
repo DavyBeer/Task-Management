@@ -2,6 +2,7 @@ import { connect } from "react-redux";
 import TaskList from "../components/TaskList.jsx";
 import addListItem from "../actions/addListItem";
 import delListItem from "../actions/delListItem";
+import markListItem from "../actions/markListItem";
 
 const mapStateToProps = state => {
     return {
@@ -16,6 +17,9 @@ const mapStateToProps = state => {
       },
       onDelete: id => {
         dispatch(delListItem(id));
+      },
+      onMark: (name, id) => {
+        dispatch(markListItem(name,id));
       }
     };
   };
