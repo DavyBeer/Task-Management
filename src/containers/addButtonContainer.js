@@ -12,7 +12,7 @@ const mapDispatchToProps = dispatch => {
     return {
         onAdd: (task) => {
             dispatch(addListItem(task));
-        }
+        },
         onDelete: (task) => {
             dispatch(delListItem(task));
         }
