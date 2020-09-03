@@ -6,7 +6,7 @@ const Item = props => {
         <div>
           Item : {props.name} 
           <button onClick={() => props.onDelete(props.index)}>Delete</button>
-          <button onClick={() => props.onMark(props.index)}>Completed</button>
+          <button onClick={() => props.onFilter(props.filt)}>Completed</button>
         </div>
       </div>
     );
@@ -32,6 +32,8 @@ class Input extends React.Component {
             value={this.state.name}
           />
           <button onClick={() => this.addListItem()}>Add</button>
+          <hr />
+          <button onClick={() => this.changefilter()}>Filter</button>
         </div>
       );
     }
