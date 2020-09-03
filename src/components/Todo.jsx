@@ -5,7 +5,7 @@ const Todo = () => {
   return (
     <div>
         <input placeHolder="Enter an item"></input>
-        <button>Add</button>
+        <addButtonContainer />
     </div>
   )
 };
