@@ -8,18 +8,7 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onAdd: (task) => {
-            dispatch(addListItem(task));
-        },
-        onDelete: (task) => {
-            dispatch(delListItem(task));
-        }
-    };
-};
-
-const addButtonContainer = connect(mapStateToProps, mapDispatchToProps)(
+const addButtonContainer = connect(mapStateToProps, null)(
     addButton
 );
 
