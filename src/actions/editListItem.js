@@ -1,4 +1,4 @@
-import { EDIT_LIST_ITEM } from "./constants/contants.js";
+import { EDIT_LIST_ITEM } from "./constants/constants.js";
 
 const editListItem = index => {
     return {
