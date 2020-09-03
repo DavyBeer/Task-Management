@@ -1,9 +1,9 @@
 import { DEL_LIST_ITEM } from "./constants/contants.js";
 
-const delListItem = () => {
+const delListItem = (index) => {
     return {
         type: DEL_LIST_ITEM,
-
+        index: index
     };
 };
 
