@@ -1,10 +1,10 @@
 import { FILTER_LIST_ITEMS } from "../constants/constants.js";
 
-const filterListItem = (name) => {
+const filterListItems = (filter) => {
     return {
       type: FILTER_LIST_ITEMS,
       filter: filter
     };
   };
 
-export default filterListItem;
+export default filterListItems;
