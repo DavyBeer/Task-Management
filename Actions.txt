@@ -1,1 +1,1 @@
-The task management web app will have ADD_ITEM, DELETE_ITEM, EDIT_ITEM, MARK_COMPLETED
+The task management web app will have ADD_ITEM, DELETE_ITEM, DONT_ITEM
