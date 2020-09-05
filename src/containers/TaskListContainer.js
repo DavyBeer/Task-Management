@@ -18,8 +18,8 @@ const mapStateToProps = state => {
       onDelete: id => {
         dispatch(delListItem(id));
       },
-      onDone: name => {
-        dispatch(doneItem(name));
+      onChange: (id) => {
+        dispatch(doneItem(id));
       }
     };
   };
