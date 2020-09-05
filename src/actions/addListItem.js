@@ -5,7 +5,6 @@ const addListItem = (name) => {
       type: ADD_LIST_ITEM,
       item: {
         name: name
-        
       }
     };
 };
