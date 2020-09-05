@@ -6,7 +6,7 @@ const Item = props => {
         <div>
           Item : {props.name} 
           <button onClick={() => props.onDelete(props.index)}>Delete</button>
-          <button onClick={() => props.onDone(props.index)}>Completed</button>
+          <button onClick={() => props.onChange(props.index)}>Completed</button>
         </div>
       </div>
     );
@@ -15,7 +15,9 @@ const Item = props => {
 class Input extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { name: "" };
+      this.state = {
+        name: ""
+      };
     }
     handleChangeName(event) {
       this.setState({ name: event.target.value });
@@ -47,7 +49,7 @@ const TaskList = props => {
           return (
             <Item
               onDelete={props.onDelete}
-              onDone={props.onDone}
+              onChange={props.onChange}
               index={index}
               name={item.name}
             />
