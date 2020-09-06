@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #7fdbcd;
 }
 
 code {
@@ -12,14 +13,14 @@ code {
     monospace;
 }
 
-.todoListMain .header input {
+.header input {
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #FFF;
+  border: 2px solid;
   width: 165px;
 }
 
-.todoListMain .header button {
+.header button {
   padding: 10px;
   font-size: 16px;
   margin: 10px;
@@ -29,13 +30,13 @@ code {
   border: 2px solid #0066FF;
 }
 
-.todoListMain .header button:hover {
+.header button:hover {
   background-color: #003399;
   border: 2px solid #003399;
   cursor: pointer;
 }
 
-.todoListMain .theList li {
+.header div {
   color: #333;
   background-color: rgba(255,255,255,.5);
   padding: 15px;
@@ -44,15 +45,11 @@ code {
   list-style: none;
 }
 
-ul.theList {
-  padding: 0;
-}
-
 .crossed-line {
   text-decoration: line-through;
 }
 
-.container {
+#root {
   display: flex;
   justify-content: center;
 }
