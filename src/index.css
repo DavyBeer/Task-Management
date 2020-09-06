@@ -51,3 +51,8 @@ ul.theList {
 .crossed-line {
   text-decoration: line-through;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
