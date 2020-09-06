@@ -19,7 +19,7 @@ class Contact extends React.Component {
       margin: 5
     };
     return (
-      <div>
+      <div className="header">
         <h5>First Name:</h5>
         <input
           value={this.state.firstName}

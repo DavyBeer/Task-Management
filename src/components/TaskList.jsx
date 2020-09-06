@@ -2,11 +2,11 @@ import React from "react";
 
 const Item = props => {
     return (
-      <div>
+      <div className="header">
         <div>
           Item : {props.name} 
           <button onClick={() => props.onDelete(props.index)}>Delete</button>
-          <button onClick={() => props.onChange(props.index)}>Completed</button>
+          <input className="check" type="checkbox"></input>
         </div>
       </div>
     );
@@ -26,9 +26,12 @@ class Input extends React.Component {
       this.props.onAdd(this.state.name);
       this.setState({ name: ""});
     }
+    handleClick = e => {
+      e.target.classList.toggle("strikeThrough");
+    }
     render() {
       return (
-        <div>
+        <div className="header">
           <input
             onChange={this.handleChangeName.bind(this)}
             value={this.state.name}
